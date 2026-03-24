@@ -10,18 +10,18 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background:
-    radial-gradient(circle at top, #2a1c1c 0%, #111 35%, #050505 100%);
-  color: #f4f1ec;
+    radial-gradient(circle at top left, #5a1f1f 0%, #1a0d0d 30%, #070707 75%, #000000 100%);
+  color: #f6efe7;
   line-height: 1.6;
 }
 
 a {
-  color: #f4f1ec;
+  color: #ffd7b0;
   text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .hero {
@@ -40,9 +40,10 @@ a:hover {
 }
 
 .logo {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 800;
   letter-spacing: 0.04em;
+  color: #fff3e8;
 }
 
 .nav-links {
@@ -52,7 +53,7 @@ a:hover {
 }
 
 .nav-links a {
-  color: #d9d2ca;
+  color: #e7c9b6;
 }
 
 .hero-content {
@@ -67,24 +68,25 @@ a:hover {
 .eyebrow {
   display: inline-block;
   padding: 8px 14px;
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid rgba(255, 196, 150, 0.25);
   border-radius: 999px;
-  background: rgba(255,255,255,0.04);
-  color: #d8d0c7;
+  background: rgba(255, 168, 120, 0.08);
+  color: #ffd8bd;
   font-size: 0.9rem;
   margin-bottom: 18px;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  font-size: clamp(2.8rem, 7vw, 5.7rem);
   line-height: 0.95;
   margin: 0 0 20px 0;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.05em;
+  color: #fff4ea;
 }
 
 .intro {
   max-width: 650px;
-  color: #d8d0c7;
+  color: #e4cfc0;
   font-size: 1.1rem;
 }
 
@@ -100,7 +102,7 @@ h1 {
   padding: 14px 22px;
   border-radius: 14px;
   font-weight: 700;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
 }
 
 .btn:hover {
@@ -108,21 +110,23 @@ h1 {
 }
 
 .btn.primary {
-  background: #f4f1ec;
-  color: #111;
+  background: linear-gradient(135deg, #ffb36b, #ff7b54);
+  color: #1a0c08;
+  box-shadow: 0 10px 30px rgba(255, 123, 84, 0.25);
 }
 
 .btn.secondary {
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255, 214, 176, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f7e7d8;
 }
 
 .hero-image-wrap {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 181, 120, 0.12);
   border-radius: 28px;
   padding: 14px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .hero-image {
@@ -144,30 +148,36 @@ main {
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255, 186, 132, 0.12);
   border-radius: 28px;
   padding: 30px;
-  box-shadow: 0 18px 50px rgba(0,0,0,0.25);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(6px);
 }
 
 h2 {
   margin-top: 0;
   font-size: 2rem;
+  color: #fff0e3;
+}
+
+p {
+  color: #e1cabc;
 }
 
 blockquote {
   margin: 24px 0 0 0;
   padding-left: 18px;
-  border-left: 3px solid rgba(255,255,255,0.25);
-  color: #d8d0c7;
+  border-left: 3px solid rgba(255, 145, 92, 0.5);
+  color: #ffd8c0;
   font-style: italic;
 }
 
 blockquote span {
   font-style: normal;
   font-size: 0.95rem;
-  color: #b8aea3;
+  color: #dcb5a2;
 }
 
 .tags {
@@ -180,13 +190,13 @@ blockquote span {
 .tags span {
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #ece7e0;
+  background: rgba(255, 140, 88, 0.1);
+  border: 1px solid rgba(255, 180, 140, 0.16);
+  color: #ffe6d1;
 }
 
 .small-note {
-  color: #c8bfb5;
+  color: #d8b8a4;
 }
 
 .video-placeholder {
@@ -195,9 +205,9 @@ blockquote span {
   display: grid;
   place-items: center;
   border-radius: 20px;
-  border: 1px dashed rgba(255,255,255,0.2);
-  background: rgba(0,0,0,0.25);
-  color: #bfb5a8;
+  border: 1px dashed rgba(255, 180, 140, 0.28);
+  background: rgba(0, 0, 0, 0.22);
+  color: #e0bda7;
 }
 
 .contact-list {
@@ -208,7 +218,7 @@ blockquote span {
 
 .contact-list li {
   margin-bottom: 10px;
-  color: #ddd5cc;
+  color: #edd8ca;
 }
 
 @media (max-width: 900px) {
