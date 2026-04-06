@@ -5,88 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Jordy Riensema | Comedian boeken</title>
-<meta name="description" content="Stand-up comedian Jordy Riensema boeken voor events, bedrijven en comedyshows.">
+<meta name="description" content="Boek stand-up comedian Jordy Riensema voor events, bedrijven en comedyshows.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<div class="cursor"></div>
+<!-- 🔴 FLOATING CTA -->
+<a href="#boeken" class="floating-cta">Boek Jordy</a>
 
 <header class="hero">
-  <nav>
-    <div class="logo">JORDY</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#video">Video</a>
-      <a href="#boeken">Boek</a>
-    </div>
-  </nav>
-
-  <div class="hero-content">
-    <h1>JORDY<br>RIENSEMA</h1>
-    <p class="subtitle">Stand-up comedian voor events, bedrijven en chaos</p>
-
-    <div class="cta">
-      <a href="#boeken" class="btn-primary">Boek Jordy</a>
-      <a href="#video" class="btn-secondary">Bekijk video</a>
-    </div>
-  </div>
-
   <div class="hero-video">
     <iframe src="https://www.youtube.com/embed/Ua3Q_m2p-NE?autoplay=1&mute=1&loop=1&playlist=Ua3Q_m2p-NE"></iframe>
   </div>
+
+  <div class="hero-content">
+    <h1>JORDY<br>RIENSEMA</h1>
+    <p>Stand-up comedian</p>
+
+    <div class="hero-buttons">
+      <a href="#boeken" class="btn primary">Boek</a>
+      <a href="#video" class="btn secondary">Bekijk</a>
+    </div>
+  </div>
 </header>
 
-<section id="about" class="section">
-  <h2>Wie de f*ck is Jordy?</h2>
+<section class="section">
+  <h2>Wie de f*ck is dit?</h2>
   <p>
-    Comedian uit Nederland. Vader. Docent. Iemand die normale dingen compleet uit de hand laat lopen op een podium.
+    Comedian. Vader. Docent. En iemand die compleet normale situaties weet te veranderen
+    in iets waar je om moet lachen en je een beetje ongemakkelijk bij voelt.
   </p>
 </section>
 
 <section id="video" class="section">
-  <h2>Bewijs</h2>
-  <iframe src="https://www.youtube.com/embed/kYS7UI8Hz3Q"></iframe>
+  <h2>Bekijk dit even</h2>
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/kYS7UI8Hz3Q"></iframe>
+  </div>
 </section>
 
 <section id="boeken" class="section booking">
   <h2>Boek Jordy</h2>
   <p>Voor events, bedrijven en comedyshows.</p>
 
-  <a href="mailto:jordyrien@hotmail.com" class="btn-primary big">
+  <a href="mailto:jordyrien@hotmail.com" class="btn primary big">
     Direct boeken
+  </a>
+
+  <a href="tel:+31611761993" class="btn secondary big">
+    Bel direct
   </a>
 </section>
 
 <script>
-/* cursor */
-const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", e => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
-});
-
 /* scroll reveal */
-const elements = document.querySelectorAll(".section");
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
+const sections = document.querySelectorAll(".section");
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
     }
   });
 });
-elements.forEach(el=>observer.observe(el));
-
-/* parallax */
-document.addEventListener("mousemove", e => {
-  const video = document.querySelector(".hero-video");
-  let x = (e.clientX/window.innerWidth - 0.5)*20;
-  let y = (e.clientY/window.innerHeight - 0.5)*20;
-  video.style.transform = `translate(${x}px, ${y}px)`;
-});
+sections.forEach(s=>obs.observe(s));
 </script>
 
 </body>
