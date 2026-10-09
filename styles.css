@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
 
-/* Jordy Riensema — podiumposter / oktober 2026 */
 :root { --paper:#f4f1e9; --paper-deep:#eae6db; --ink:#171917; --muted:#62665e; --acid:#ddf247; --line:#d3d2c7; --display:'Barlow Condensed',Impact,'Arial Narrow',sans-serif; --body:'DM Sans',Arial,sans-serif; --max:1320px; }
 *,*::before,*::after { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:100px; }
@@ -24,7 +23,6 @@ h2 { font-size:clamp(44px,5.1vw,76px); line-height:.99; letter-spacing:-.025em; 
 .skip-link { position:fixed; top:12px; left:12px; z-index:20; padding:12px 20px; background:var(--acid); transform:translateY(-180%); }
 .skip-link:focus { transform:translateY(0); }
 
-/* Navigatie */
 .site-header { position:sticky; top:0; z-index:10; background:var(--paper); border-bottom:1px solid var(--line); }
 .nav { min-height:88px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .wordmark { font-size:27px; letter-spacing:-.03em; line-height:1; white-space:nowrap; }
@@ -35,7 +33,6 @@ h2 { font-size:clamp(44px,5.1vw,76px); line-height:.99; letter-spacing:-.025em; 
 .nav-book:hover { background:var(--acid); }
 .menu-toggle { display:none; }
 
-/* Opening met portret */
 .hero { padding-block:40px 50px; }
 .hero-grid { display:grid; grid-template-columns:1.12fr 1fr; gap:38px; align-items:stretch; }
 .hero-copy { padding-block:40px 20px; display:flex; flex-direction:column; align-items:flex-start; }
@@ -60,11 +57,12 @@ h1 .accent { color:#798720; }
 .portrait-sticker { position:absolute; bottom:73px; left:-28px; z-index:1; padding:21px 29px; background:var(--acid); font-size:21px; line-height:1.15; letter-spacing:-.025em; font-weight:700; transform:rotate(-7deg); box-shadow:0 5px 0 rgba(0,0,0,.08); }
 .hero-portrait figcaption { position:absolute; inset:auto 0 0; display:flex; justify-content:space-between; align-items:center; padding:17px 22px; background:linear-gradient(transparent,#111b); color:#fff; font-size:10px; letter-spacing:.15em; font-weight:600; }
 .hero-portrait figcaption>span:last-child { font-size:28px; line-height:1; }
+.mobile-hero-portrait { display:none; }
+
 .statement-strip { background:var(--ink); color:var(--acid); }
 .strip-content { min-height:79px; display:flex; gap:20px; align-items:center; justify-content:space-between; font-family:var(--display); font-size:clamp(17px,2.3vw,30px); font-weight:700; line-height:1; }
 .strip-star { font-family:var(--body); font-size:30px; }
 
-/* Over Jordy */
 .about-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:100px; align-items:center; }
 .about-photo { position:relative; margin-right:18px; padding:12px 12px 0; border:1px solid var(--line); background:#e7e5db; transform:rotate(-2deg); }
 .about-photo img { width:100%; max-height:540px; object-fit:cover; object-position:center 32%; }
@@ -76,7 +74,6 @@ h1 .accent { color:#798720; }
 .about-copy>p.lead { color:var(--ink); }
 .about-copy>.text-link { margin-top:27px; }
 
-/* Diensten */
 .services-section { border-top:1px solid var(--line); background:var(--paper-deep); }
 .section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:50px; margin-bottom:50px; }
 .section-heading>p,.section-heading>div:last-child:not(:first-child) { max-width:300px; color:var(--muted); font-size:15px; }
@@ -90,7 +87,6 @@ h1 .accent { color:#798720; }
 .service-aside { margin-top:26px; font-size:12px; color:var(--muted); }
 .service-aside a { color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
 
-/* Video */
 .video-section { background:var(--ink); color:var(--paper); }
 .video-section .section-index { color:var(--acid); }
 .video-section .section-heading>div:last-child { color:#b8bdb3; }
@@ -108,7 +104,6 @@ h1 .accent { color:#798720; }
 .video-frame iframe { width:100%; height:100%; border:0; display:block; }
 .video-note { color:#b8bdb3; font-size:11px; margin-top:14px; }
 
-/* Foto's */
 .gallery-heading { align-items:center; }
 .gallery-grid { display:grid; grid-template-columns:1.25fr .85fr .85fr; gap:24px; }
 .gallery-photo { overflow:hidden; height:370px; background:var(--paper-deep); }
@@ -120,7 +115,6 @@ h1 .accent { color:#798720; }
 .gallery-grid figcaption>span:first-child { color:var(--muted); font-size:9px; font-weight:600; letter-spacing:.1em; }
 .gallery-grid figcaption>span:last-child { font-size:13px; }
 
-/* Vragen */
 .faq-section { padding-top:0; }
 .faq-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:80px; border-top:1px solid var(--line); padding-top:85px; }
 .faq-grid>div:first-child>p:last-child { color:var(--muted); margin-top:25px; font-size:15px; }
@@ -132,7 +126,6 @@ h1 .accent { color:#798720; }
 details[open] .faq-plus { transform:rotate(45deg); }
 .faq-list details>p { padding:0 35px 25px 0; color:var(--muted); font-size:15px; }
 
-/* Boeken en footer */
 .booking-section { background:var(--acid); padding-block:90px; }
 .booking-grid { display:grid; grid-template-columns:1.5fr .6fr; align-items:center; gap:70px; }
 .booking-grid h2 { margin-top:26px; font-size:clamp(56px,6.5vw,94px); }
@@ -224,26 +217,59 @@ details[open] .faq-plus { transform:rotate(45deg); }
   .js .nav-links { left:-20px; right:-20px; padding-inline:20px; }
   .hero { padding-block:23px 27px; }
   .hero-grid { grid-template-columns:1fr; gap:25px; }
-  .hero-copy { display:contents; }
-  .hero-copy > .eyebrow { grid-row:1; }
-  .hero-copy > h1 { grid-row:2; }
-  .hero-portrait { grid-row:3; }
-  .hero-copy > .hero-tagline { grid-row:4; }
-  .hero-copy > .hero-description { grid-row:5; }
-  .hero-copy > .actions { grid-row:6; }
-  .hero-copy > .hero-footnote { grid-row:7; }
+  .hero-copy { display:flex; padding:8px 0 0; }
+  .hero-grid > .hero-portrait { display:none; }
   .hero .eyebrow { font-size:10px; }
   h1 { font-size:clamp(68px,19.7vw,124px); margin:0; }
+
+  .mobile-hero-portrait {
+    display:block;
+    position:relative;
+    width:100%;
+    margin-top:25px;
+    aspect-ratio:1.08;
+    overflow:hidden;
+  }
+
+  .mobile-hero-portrait>img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:50% 22%;
+  }
+
+  .mobile-hero-portrait .portrait-sticker {
+    bottom:49px;
+    left:13px;
+    padding:13px 18px;
+    font-size:16px;
+  }
+
+  .mobile-hero-portrait figcaption {
+    position:absolute;
+    inset:auto 0 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 17px;
+    background:linear-gradient(transparent,#111b);
+    color:#fff;
+    font-size:8px;
+    letter-spacing:.15em;
+    font-weight:600;
+  }
+
+  .mobile-hero-portrait figcaption>span:last-child {
+    font-size:24px;
+    line-height:1;
+  }
+
   .hero-tagline { font-size:27px; }
-  .hero-description { font-size:14px; margin-top:-10px; max-width:370px; }
-  .actions { margin-top:0; gap:18px; }
+  .hero-description { font-size:14px; margin-top:14px; max-width:370px; }
+  .actions { margin-top:22px; gap:18px; }
   .button { padding:14px 18px; gap:20px; font-size:12px; min-height:50px; }
   .text-link { font-size:12px; gap:10px; }
-  .hero-footnote { max-width:none; padding-top:0; font-size:8px; }
-  .hero-portrait { min-height:0; aspect-ratio:1.08; }
-  .hero-portrait>img { object-position:50% 22%; }
-  .portrait-sticker { bottom:49px; left:13px; padding:13px 18px; font-size:16px; }
-  .hero-portrait figcaption { padding:12px 17px; font-size:8px; }
+  .hero-footnote { max-width:none; padding-top:21px; font-size:8px; }
   .strip-content { min-height:58px; gap:9px; font-size:clamp(16px,4.5vw,24px); }
   .strip-star { font-size:19px; }
   h2 { font-size:clamp(40px,10.4vw,58px); }
