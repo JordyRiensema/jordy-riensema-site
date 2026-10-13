@@ -2,14 +2,14 @@
 <html lang="nl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Jordy Riensema — comedy, hosting en ceremonies.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jordy Riensema — stand-up comedy, hosting en ceremonies.">
   <meta name="theme-color" content="#151515">
   <title>Jordy Riensema — comedy, hosting & ceremonies</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,42 +17,38 @@
 <body>
   <a class="skip-link" href="#inhoud">Naar inhoud</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Jordy Riensema, naar boven">
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Naar boven">
       JORDY<span>RIENSEMA.</span>
     </a>
 
-    <nav aria-label="Hoofdnavigatie">
-      <a href="#werk">Werk</a>
-      <a href="#kijken">Kijken</a>
-      <a class="nav-cta" href="mailto:jordyrien@hotmail.com?subject=Boeking%20Jordy%20Riensema">
-        Boek Jordy <span aria-hidden="true">↗</span>
-      </a>
-    </nav>
+    <a class="header-booking" href="#boeken">
+      BOEK JORDY <span aria-hidden="true">↗</span>
+    </a>
   </header>
 
   <main id="inhoud">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow reveal">COMEDY · HOSTING · CEREMONIES</p>
+    <section class="hero" id="top">
+      <div class="hero-top">
+        <p class="label animate">COMEDY · HOSTING · CEREMONIES</p>
 
-        <h1 id="hero-title" class="hero-title">
-          <span class="reveal delay-1">JORDY</span>
-          <span class="accent reveal delay-2">RIENSEMA.</span>
+        <h1 class="hero-title">
+          <span class="animate delay-1">JORDY</span>
+          <span class="lime animate delay-2">RIENSEMA.</span>
         </h1>
 
-        <p class="hero-line reveal delay-3">
+        <p class="hero-intro animate delay-3">
           Aangenaam.<br>
           Soms ongemakkelijk.
         </p>
       </div>
 
-      <figure class="hero-portrait reveal-image">
+      <figure class="hero-image animate-image">
         <img
           src="jordy-portret.jpg"
+          alt="Portret van Jordy Riensema"
           width="1024"
           height="1536"
-          alt="Jordy Riensema in zwart T-shirt, recht in de camera kijkend"
           fetchpriority="high"
         >
         <figcaption>
@@ -61,151 +57,128 @@
         </figcaption>
       </figure>
 
-      <div class="hero-bottom reveal delay-4">
+      <div class="hero-footer animate delay-4">
         <p>STAND-UP COMEDIAN<br>&amp; MEER</p>
-
-        <a class="round-link" href="#werk" aria-label="Bekijk wat Jordy doet">
-          <span aria-hidden="true">↓</span>
-        </a>
-
-        <p class="hero-aside">
-          Ziet er serieus uit.<br>
-          Valt mee.
-        </p>
+        <p>Ziet er serieus uit.<br>Valt mee.</p>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Diensten">
-      <div class="ticker-track">
-        <span>STAND-UP COMEDY <b>✳</b></span>
-        <span>DAGVOORZITTER <b>✳</b></span>
-        <span>CEREMONIES <b>✳</b></span>
-        <span>STAND-UP COMEDY <b>✳</b></span>
-        <span>DAGVOORZITTER <b>✳</b></span>
-        <span>CEREMONIES <b>✳</b></span>
+    <section class="moving-line" aria-label="Diensten">
+      <div>
+        <span>STAND-UP COMEDY</span>
+        <b>✳</b>
+        <span>DAGVOORZITTER</span>
+        <b>✳</b>
+        <span>CEREMONIES</span>
+        <b>✳</b>
+        <span>STAND-UP COMEDY</span>
+        <b>✳</b>
+        <span>DAGVOORZITTER</span>
+        <b>✳</b>
+        <span>CEREMONIES</span>
+        <b>✳</b>
       </div>
     </section>
 
-    <section class="roles section" id="werk" aria-labelledby="work-title">
-      <div class="section-intro">
-        <p class="eyebrow">01 / OP JOUW PODIUM</p>
-        <h2 id="work-title">
-          KIES JE<br>
-          <em>AVONTUUR.</em>
-        </h2>
+    <section class="services" id="werk">
+      <div class="section-heading">
+        <p class="label">01 / OP JOUW PODIUM</p>
+        <h2>KIES JE<br><em>AVONTUUR.</em></h2>
       </div>
 
-      <div class="role-list">
-        <a class="role" href="mailto:jordyrien@hotmail.com?subject=Boeking%20stand-up%20comedy">
-          <span class="role-number">01</span>
-          <span class="role-title">STAND-UP<br>COMEDY</span>
-          <span class="role-note">Lachen. Vaak op het verkeerde moment.</span>
-          <span class="role-arrow" aria-hidden="true">↗</span>
+      <div class="service-list">
+        <a href="mailto:jordyrien@hotmail.com?subject=Boeking%20stand-up%20comedy" class="service">
+          <span class="number">01</span>
+
+          <div>
+            <h3>STAND-UP<br>COMEDY</h3>
+            <p>Lachen. Vaak op het verkeerde moment.</p>
+          </div>
+
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
 
-        <a class="role" href="mailto:jordyrien@hotmail.com?subject=Boeking%20dagvoorzitter%20of%20host">
-          <span class="role-number">02</span>
-          <span class="role-title">HOST /<br>DAGVOORZITTER</span>
-          <span class="role-note">Houdt de boel scherp. En bij elkaar.</span>
-          <span class="role-arrow" aria-hidden="true">↗</span>
+        <a href="mailto:jordyrien@hotmail.com?subject=Boeking%20dagvoorzitter%20of%20host" class="service">
+          <span class="number">02</span>
+
+          <div>
+            <h3>HOST /<br>DAGVOORZITTER</h3>
+            <p>Houdt de boel scherp. En bij elkaar.</p>
+          </div>
+
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
 
-        <a class="role" href="mailto:jordyrien@hotmail.com?subject=Ceremonie%20met%20Jordy%20Riensema">
-          <span class="role-number">03</span>
-          <span class="role-title">CEREMONIES<br>MET KARAKTER</span>
-          <span class="role-note">Mooi. Persoonlijk. Niet te mierzoet.</span>
-          <span class="role-arrow" aria-hidden="true">↗</span>
+        <a href="mailto:jordyrien@hotmail.com?subject=Ceremonie%20met%20Jordy%20Riensema" class="service">
+          <span class="number">03</span>
+
+          <div>
+            <h3>CEREMONIES<br>MET KARAKTER</h3>
+            <p>Mooi. Persoonlijk. Niet te mierzoet.</p>
+          </div>
+
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
 
-    <section class="proof section" id="kijken" aria-labelledby="proof-title">
-      <div class="proof-image-wrap">
+    <section class="portrait-break">
+      <div class="portrait-break-copy">
+        <p class="label">02 / IN ZIJN NATUURLIJKE HABITAT</p>
+        <h2>GEEN<br><em>FILTER.</em></h2>
+        <p>Wel een microfoon.</p>
+      </div>
+
+      <figure>
         <img
-          class="proof-image"
           src="jordy-podium.jpg"
+          alt="Jordy Riensema op het podium met een microfoon"
           width="644"
           height="949"
-          alt="Jordy Riensema met microfoon op het podium"
           loading="lazy"
         >
-        <p class="image-label">
-          IN ZIJN NATUURLIJKE<br>
-          HABITAT. <span>J.</span>
-        </p>
-      </div>
-
-      <div class="proof-copy">
-        <p class="eyebrow">02 / BEWIJSMATERIAAL</p>
-
-        <h2 id="proof-title">
-          KIJK<br>
-          MAAR <em>EVEN.</em>
-        </h2>
-
-        <p>Live. Met geluid. Eigen risico.</p>
-
-        <button
-          class="video-trigger"
-          type="button"
-          data-video-id="LVGFIBVD9kA"
-          aria-controls="video-panel"
-          aria-expanded="false"
-        >
-          <span class="play-icon" aria-hidden="true">▶</span>
-          SPEEL VIDEO AF <span aria-hidden="true">↗</span>
-        </button>
-
-        <div class="video-panel" id="video-panel" hidden></div>
-      </div>
+      </figure>
     </section>
 
-    <section class="gallery section" aria-labelledby="gallery-title">
-      <div class="gallery-head">
-        <p class="eyebrow">03 / IN HET WILD</p>
-
-        <h2 id="gallery-title">
-          NOG<br>
-          STEEDS <em>HIJ.</em>
-        </h2>
+    <section class="photos">
+      <div class="photos-title">
+        <p class="label">03 / NOG STEEDS HIJ</p>
+        <h2>OOK<br><em>OVERDAG.</em></h2>
 
         <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">
           INSTAGRAM <span aria-hidden="true">↗</span>
         </a>
       </div>
 
-      <figure class="gallery-photo gallery-photo-one">
+      <figure class="photo-wide">
         <img
           src="jordy-2.jpg"
+          alt="Jordy tijdens een optreden"
           width="1600"
           height="1200"
-          alt="Jordy tijdens een optreden"
           loading="lazy"
         >
-        <figcaption>01 / MICROFOON AAN.<br>FILTER UIT.</figcaption>
+        <figcaption>MICROFOON AAN. FILTER UIT.</figcaption>
       </figure>
 
-      <figure class="gallery-photo gallery-photo-two">
+      <figure class="photo-tall">
         <img
           src="jordy-4.jpg"
+          alt="Jordy Riensema in pak"
           width="1086"
           height="1600"
-          alt="Jordy Riensema in pak"
           loading="lazy"
         >
-        <figcaption>02 / VERRASSEND<br>REPRESENTATIEF.</figcaption>
+        <figcaption>VERRASSEND REPRESENTATIEF.</figcaption>
       </figure>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow">04 / JOUW PODIUM. MIJN PROBLEEM.</p>
+    <section class="booking" id="boeken">
+      <p class="label">04 / JOUW PODIUM. MIJN PROBLEEM.</p>
 
-      <h2 id="contact-title">
-        ZEG HET<br>
-        <em>MAAR.</em>
-      </h2>
+      <h2>ZEG HET<br><em>MAAR.</em></h2>
 
-      <div class="contact-links">
+      <div class="booking-links">
         <a href="mailto:jordyrien@hotmail.com?subject=Boeking%20Jordy%20Riensema">
           jordyrien@hotmail.com <span aria-hidden="true">↗</span>
         </a>
@@ -215,54 +188,18 @@
         </a>
       </div>
 
-      <p class="contact-note">Een datum is een prima begin.</p>
+      <p class="booking-note">Een datum is een prima begin.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="wordmark" href="#top">
+  <footer>
+    <a class="logo" href="#top">
       JORDY<span>RIENSEMA.</span>
     </a>
 
     <p>© 2026 · VOLLEDIG UIT VERHOUDING.</p>
 
-    <a href="#top">
-      TERUG NAAR BOVEN <span aria-hidden="true">↑</span>
-    </a>
+    <a href="#top">NAAR BOVEN ↑</a>
   </footer>
-
-  <script>
-    const trigger = document.querySelector(".video-trigger");
-    const panel = document.querySelector(".video-panel");
-
-    trigger.addEventListener("click", () => {
-      if (panel.hidden) {
-        const frame = document.createElement("iframe");
-
-        frame.src = `https://www.youtube-nocookie.com/embed/${trigger.dataset.videoId}?autoplay=1&rel=0`;
-        frame.title = "Jordy Riensema live";
-        frame.allow = "autoplay; encrypted-media; picture-in-picture";
-        frame.allowFullscreen = true;
-
-        panel.append(frame);
-        panel.hidden = false;
-        trigger.setAttribute("aria-expanded", "true");
-
-        trigger.innerHTML = `
-          <span class="play-icon" aria-hidden="true">▶</span>
-          SLUIT VIDEO ×
-        `;
-      } else {
-        panel.replaceChildren();
-        panel.hidden = true;
-        trigger.setAttribute("aria-expanded", "false");
-
-        trigger.innerHTML = `
-          <span class="play-icon" aria-hidden="true">▶</span>
-          SPEEL VIDEO AF <span aria-hidden="true">↗</span>
-        `;
-      }
-    });
-  </script>
 </body>
 </html>
