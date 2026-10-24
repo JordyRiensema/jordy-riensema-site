@@ -1,24 +1,209 @@
-<section class="short-section">
-  <a
-    class="short-video"
-    href="https://youtube.com/shorts/uxFbCLT_5jk"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Bekijk Jordy Riensema op YouTube"
-  >
-    <iframe
-      src="https://www.youtube-nocookie.com/embed/uxFbCLT_5jk?autoplay=1&mute=1&loop=1&playlist=uxFbCLT_5jk&playsinline=1&controls=0&rel=0&modestbranding=1"
-      title="Jordy Riensema op YouTube"
-      allow="autoplay; encrypted-media; picture-in-picture"
-      allowfullscreen
-      loading="lazy"
-    ></iframe>
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jordy Riensema — comedy, hosting en ceremonies.">
+  <meta name="theme-color" content="#1e1713">
+  <title>Jordy Riensema</title>
 
-    <span class="short-label">KIJK MET GELUID ↗</span>
-  </a>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
 
-  <div class="short-copy">
-    <p class="kicker">KORT. KRACHTIG.</p>
-    <h2>LIVE<br><em>GENOEG.</em></h2>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="opening" id="opening" aria-hidden="true">
+    <div class="opening-light"></div>
+    <div class="opening-letter">J<span>.</span></div>
+    <p>JORDY RIENSEMA</p>
+    <button type="button" id="skip-opening">SKIP ↗</button>
   </div>
-</section>
+
+  <header class="header">
+    <a href="#top" class="logo">JORDY<br>RIENSEMA</a>
+    <a href="#boeken" class="header-button">BOEK JORDY ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">COMEDY · HOSTING · CEREMONIES</p>
+
+        <h1>
+          JORDY<br>
+          <em>RIENSEMA.</em>
+        </h1>
+
+        <p class="hero-text">
+          Aangenaam.<br>
+          Soms ongemakkelijk.
+        </p>
+      </div>
+
+      <figure class="hero-photo">
+        <img
+          src="jordy-portret.jpg"
+          alt="Jordy Riensema"
+          width="1024"
+          height="1536"
+          fetchpriority="high"
+        >
+      </figure>
+
+      <div class="hero-monogram" aria-hidden="true">J.</div>
+    </section>
+
+    <section class="services" aria-label="Diensten">
+      <a href="#" class="mail-link service">
+        <span>01</span>
+        <strong>STAND-UP<br>COMEDY</strong>
+        <b aria-hidden="true">↗</b>
+      </a>
+
+      <a href="#" class="mail-link service">
+        <span>02</span>
+        <strong>HOST /<br>DAGVOORZITTER</strong>
+        <b aria-hidden="true">↗</b>
+      </a>
+
+      <a href="#" class="mail-link service">
+        <span>03</span>
+        <strong>CEREMONIES<br>MET KARAKTER</strong>
+        <b aria-hidden="true">↗</b>
+      </a>
+    </section>
+
+    <section class="quote">
+      <p>GEEN<br>SMOOTH<br>TALKER.</p>
+      <div aria-hidden="true"></div>
+      <p>WEL<br>OP ZIJN<br>PLEK.</p>
+    </section>
+
+    <section class="reel-section">
+      <div class="reel-copy">
+        <p class="eyebrow">EVEN KIJKEN</p>
+        <h2>LIVE.<br><em>ZONDER<br>VEEL GEDOE.</em></h2>
+      </div>
+
+      <a
+        class="reel"
+        href="https://youtube.com/shorts/uxFbCLT_5jk"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Bekijk Jordy Riensema op YouTube"
+      >
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/uxFbCLT_5jk?autoplay=1&mute=1&loop=1&playlist=uxFbCLT_5jk&playsinline=1&controls=0&rel=0&modestbranding=1"
+          title="Jordy Riensema op YouTube"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+
+        <span>KIJK MET GELUID ↗</span>
+      </a>
+    </section>
+
+    <section class="shows" id="speellijst">
+      <div class="shows-title">
+        <p class="eyebrow">SPEELLIJST</p>
+        <h2>WAAR<br><em>DAN?</em></h2>
+      </div>
+
+      <div class="show-list">
+        <a href="https://comedyclubhaug.com/shows" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-10-28">28.10</time>
+          <strong>CLUB HAUG<br>OPEN MIC</strong>
+          <span>ROTTERDAM</span>
+          <b>TICKETS ↗</b>
+        </a>
+
+        <a href="https://puncher.nl/haarlem/shows/" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-11-06">06.11</time>
+          <strong>PUNCHER<br>JOPENKERK · MC</strong>
+          <span>HAARLEM</span>
+          <b>TICKETS ↗</b>
+        </a>
+
+        <div class="show">
+          <time datetime="2026-11-12">12.11</time>
+          <strong>OPEN MIC<br>ALKMAARS KOFFIEHUIS</strong>
+          <span>ALKMAAR</span>
+          <b>INFO VOLGT</b>
+        </div>
+
+        <a href="https://comedyclubhaug.com/shows/big-fat-gong-show-111711773" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-11-21">21.11</time>
+          <strong>BIG FAT<br>GONG SHOW</strong>
+          <span>CLUB HAUG</span>
+          <b>TICKETS ↗</b>
+        </a>
+
+        <a href="https://www.lifester.co/events/comedy-talent-award-voorronde-10-1r6xpu7qlbe" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-11-23">23.11</time>
+          <strong>COMEDY TALENT AWARD<br>VOORRONDE</strong>
+          <span>COMEDYHUIS</span>
+          <b>TICKETS ↗</b>
+        </a>
+
+        <div class="show">
+          <time datetime="2026-12-06">06.12</time>
+          <strong>HAARLEM</strong>
+          <span>EXACTE INFO VOLGT</span>
+          <b>INFO VOLGT</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos">
+      <figure class="photo-wide">
+        <img src="jordy-2.jpg" alt="Jordy Riensema" width="1600" height="1200" loading="lazy">
+      </figure>
+
+      <div class="photo-letter" aria-hidden="true">J.</div>
+
+      <figure class="photo-tall">
+        <img src="jordy-4.jpg" alt="Jordy Riensema" width="1086" height="1600" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="booking" id="boeken">
+      <p class="eyebrow">JOUW PODIUM. MIJN PROBLEEM.</p>
+
+      <h2>ZEG HET<br><em>MAAR.</em></h2>
+
+      <div class="booking-links">
+        <a href="#" class="mail-link">STUUR EEN BERICHT ↗</a>
+        <a href="tel:+31611761993">06 1176 1993 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#top" class="logo">JORDY<br>RIENSEMA</a>
+    <p>© 2026</p>
+    <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+  </footer>
+
+  <script>
+    const opening = document.getElementById("opening");
+    const skipOpening = document.getElementById("skip-opening");
+
+    function closeOpening() {
+      opening.classList.add("closed");
+      setTimeout(() => opening.remove(), 700);
+    }
+
+    skipOpening.addEventListener("click", closeOpening);
+    setTimeout(closeOpening, 1800);
+
+    document.querySelectorAll(".mail-link").forEach((link) => {
+      const user = "jordyrien";
+      const domain = "hotmail.com";
+      link.href = `mailto:${user}@${domain}?subject=Boeking%20Jordy%20Riensema`;
+    });
+  </script>
+</body>
+</html>
