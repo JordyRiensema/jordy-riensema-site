@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jordy Riensema — comedy, hosting en ceremonies.">
-  <meta name="theme-color" content="#1c1815">
+  <meta name="description" content="Jordy Riensema — stand-up comedy, hosting en ceremonies.">
+  <meta name="theme-color" content="#171412">
   <title>Jordy Riensema</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,22 +15,24 @@
 </head>
 
 <body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-glow"></div>
+    <div class="intro-letter">J<span>.</span></div>
+    <div class="intro-name">JORDY RIENSEMA</div>
+    <button class="intro-skip" id="skip-intro" type="button">SKIP ↗</button>
+  </div>
+
   <a class="skip-link" href="#inhoud">Naar inhoud</a>
 
   <header class="header">
-    <a class="logo" href="#top" aria-label="Naar boven">
-      JORDY<br>RIENSEMA
-    </a>
-
-    <a class="book-button" href="#boeken">
-      BOEK JORDY <span aria-hidden="true">↗</span>
-    </a>
+    <a class="logo" href="#top">JORDY<br>RIENSEMA</a>
+    <a class="book-button" href="#boeken">BOEK JORDY ↗</a>
   </header>
 
   <main id="inhoud">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="hero-kicker">COMEDY · HOSTING · CEREMONIES</p>
+        <p class="kicker">COMEDY · HOSTING · CEREMONIES</p>
 
         <h1>
           JORDY<br>
@@ -41,34 +43,26 @@
       </div>
 
       <figure class="hero-photo">
-        <img
-          src="jordy-portret.jpg"
-          alt="Jordy Riensema"
-          width="1024"
-          height="1536"
-          fetchpriority="high"
-        >
+        <img src="jordy-portret.jpg" alt="Jordy Riensema" width="1024" height="1536" fetchpriority="high">
       </figure>
 
-      <div class="hero-stamp" aria-hidden="true">
-        J.<span></span>
-      </div>
+      <div class="hero-mark" aria-hidden="true">J.</div>
     </section>
 
-    <section class="roles" id="werk" aria-label="Wat Jordy doet">
-      <a href="mailto:jordyrien@hotmail.com?subject=Boeking%20stand-up%20comedy">
+    <section class="roles" aria-label="Diensten">
+      <a class="mail-link" href="#">
         <span>01</span>
         <strong>STAND-UP<br>COMEDY</strong>
         <i aria-hidden="true">↗</i>
       </a>
 
-      <a href="mailto:jordyrien@hotmail.com?subject=Boeking%20dagvoorzitter%20of%20host">
+      <a class="mail-link" href="#">
         <span>02</span>
         <strong>HOST /<br>DAGVOORZITTER</strong>
         <i aria-hidden="true">↗</i>
       </a>
 
-      <a href="mailto:jordyrien@hotmail.com?subject=Ceremonie%20met%20Jordy%20Riensema">
+      <a class="mail-link" href="#">
         <span>03</span>
         <strong>CEREMONIES<br>MET KARAKTER</strong>
         <i aria-hidden="true">↗</i>
@@ -77,50 +71,78 @@
 
     <section class="statement">
       <p>GEEN<br>SMOOTH<br>TALKER.</p>
-
-      <div class="statement-dot" aria-hidden="true"></div>
-
+      <div></div>
       <p>WEL<br>OP ZIJN<br>PLEK.</p>
     </section>
 
     <section class="stage">
-      <figure class="stage-photo">
-        <img
-          src="jordy-podium.jpg"
-          alt="Jordy Riensema op het podium"
-          width="644"
-          height="949"
-          loading="lazy"
-        >
+      <figure>
+        <img src="jordy-podium.jpg" alt="Jordy Riensema op het podium" width="644" height="949" loading="lazy">
       </figure>
 
-      <div class="stage-title">
-        <p>JORDY</p>
-        <p>RIENSEMA</p>
+      <h2>LIVE<br><em>ON STAGE.</em></h2>
+    </section>
+
+    <section class="shows" id="shows">
+      <div class="shows-top">
+        <p class="kicker">SPEELLIJST</p>
+        <h2>WAAR<br><em>DAN?</em></h2>
+      </div>
+
+      <div class="show-list">
+        <a href="https://comedyclubhaug.com/shows" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-10-28">28.10</time>
+          <span>CLUB HAUG<br>OPEN MIC</span>
+          <b>ROTTERDAM</b>
+          <i>TICKETS ↗</i>
+        </a>
+
+        <a href="https://puncher.nl/haarlem/shows/" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-11-06">06.11</time>
+          <span>PUNCHER<br>JOPENKERK · MC</span>
+          <b>HAARLEM</b>
+          <i>TICKETS ↗</i>
+        </a>
+
+        <div class="show">
+          <time datetime="2026-11-12">12.11</time>
+          <span>OPEN MIC<br>ALKMAARS KOFFIEHUIS</span>
+          <b>ALKMAAR</b>
+          <i>INFO VOLGT</i>
+        </div>
+
+        <a href="https://comedyclubhaug.com/shows/big-fat-gong-show-111711773" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-11-21">21.11</time>
+          <span>BIG FAT<br>GONG SHOW</span>
+          <b>CLUB HAUG</b>
+          <i>TICKETS ↗</i>
+        </a>
+
+        <a href="https://www.lifester.co/events/comedy-talent-award-voorronde-10-1r6xpu7qlbe" target="_blank" rel="noopener noreferrer" class="show">
+          <time datetime="2026-11-23">23.11</time>
+          <span>COMEDY TALENT AWARD<br>VOORRONDE</span>
+          <b>COMEDYHUIS</b>
+          <i>TICKETS ↗</i>
+        </a>
+
+        <div class="show">
+          <time datetime="2026-12-06">06.12</time>
+          <span>HAARLEM</span>
+          <b>EXACTE INFO VOLGT</b>
+          <i>INFO VOLGT</i>
+        </div>
       </div>
     </section>
 
     <section class="gallery">
-      <figure class="gallery-one">
-        <img
-          src="jordy-2.jpg"
-          alt="Jordy Riensema"
-          width="1600"
-          height="1200"
-          loading="lazy"
-        >
+      <figure class="gallery-wide">
+        <img src="jordy-2.jpg" alt="Jordy Riensema" width="1600" height="1200" loading="lazy">
       </figure>
 
-      <div class="gallery-word" aria-hidden="true">J.</div>
+      <div class="gallery-letter" aria-hidden="true">J.</div>
 
-      <figure class="gallery-two">
-        <img
-          src="jordy-4.jpg"
-          alt="Jordy Riensema"
-          width="1086"
-          height="1600"
-          loading="lazy"
-        >
+      <figure class="gallery-tall">
+        <img src="jordy-4.jpg" alt="Jordy Riensema" width="1086" height="1600" loading="lazy">
       </figure>
     </section>
 
@@ -130,27 +152,35 @@
       <h2>ZEG HET<br><em>MAAR.</em></h2>
 
       <div class="booking-links">
-        <a href="mailto:jordyrien@hotmail.com?subject=Boeking%20Jordy%20Riensema">
-          jordyrien@hotmail.com <span aria-hidden="true">↗</span>
-        </a>
-
-        <a href="tel:+31611761993">
-          06 1176 1993 <span aria-hidden="true">↗</span>
-        </a>
+        <a class="mail-link" href="#">STUUR EEN BERICHT ↗</a>
+        <a href="tel:+31611761993">06 1176 1993 ↗</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <a class="logo" href="#top">
-      JORDY<br>RIENSEMA
-    </a>
-
+    <a class="logo" href="#top">JORDY<br>RIENSEMA</a>
     <p>© 2026</p>
-
-    <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">
-      INSTAGRAM ↗
-    </a>
+    <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
   </footer>
+
+  <script>
+    const intro = document.getElementById("intro");
+    const skipIntro = document.getElementById("skip-intro");
+
+    const closeIntro = () => {
+      intro.classList.add("intro-hidden");
+      setTimeout(() => intro.remove(), 700);
+    };
+
+    skipIntro.addEventListener("click", closeIntro);
+    setTimeout(closeIntro, 1850);
+
+    document.querySelectorAll(".mail-link").forEach((link) => {
+      const user = "jordyrien";
+      const domain = "hotmail.com";
+      link.href = `mailto:${user}@${domain}?subject=Boeking%20Jordy%20Riensema`;
+    });
+  </script>
 </body>
 </html>
