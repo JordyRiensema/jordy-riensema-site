@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Jordy Riensema — stand-up comedy, hosting en ceremonies.">
-  <meta name="theme-color" content="#1e1713">
-  <title>Jordy Riensema</title>
+  <meta name="theme-color" content="#191512">
+  <title>Jordy Riensema — Comedy, hosting & ceremonies</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,146 +15,277 @@
 </head>
 
 <body>
-  <div class="opening" id="opening" aria-hidden="true">
-    <div class="opening-glow"></div>
-    <div class="opening-letter">J<span>.</span></div>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-glow"></div>
+    <div class="intro-letter">J<span>.</span></div>
     <p>JORDY RIENSEMA</p>
-    <button type="button" id="skip-opening">SKIP ↗</button>
+    <button type="button" id="skip-intro">SKIP ↗</button>
   </div>
 
+  <a class="skip-link" href="#inhoud">Naar inhoud</a>
+
   <header class="header">
-    <a class="logo" href="#top">JORDY<br>RIENSEMA</a>
-    <a class="book-button" href="#boeken">BOEK JORDY ↗</a>
+    <a class="logo" href="#top" aria-label="Jordy Riensema, naar boven">
+      JORDY<br>RIENSEMA
+    </a>
+
+    <nav class="navigation" aria-label="Hoofdnavigatie">
+      <a href="#speellijst">SPEELDATA</a>
+      <a href="#boeken" class="header-button">BOEK JORDY ↗</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero" id="top">
+  <main id="inhoud">
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">COMEDY · HOSTING · CEREMONIES</p>
-        <h1>JORDY<br><em>RIENSEMA.</em></h1>
-        <p class="hero-text">Aangenaam.<br>Soms ongemakkelijk.</p>
+
+        <h1 id="hero-title">
+          JORDY<br>
+          <em>RIENSEMA.</em>
+        </h1>
+
+        <p class="hero-text">
+          Aangenaam.<br>
+          Soms ongemakkelijk.
+        </p>
       </div>
 
       <figure class="hero-photo">
-        <img src="jordy-portret.jpg" alt="Jordy Riensema" width="1024" height="1536" fetchpriority="high">
+        <img
+          src="jordy-portret.jpg"
+          alt="Portret van Jordy Riensema"
+          width="1024"
+          height="1536"
+          fetchpriority="high"
+        >
       </figure>
 
       <div class="hero-mark" aria-hidden="true">J.</div>
     </section>
 
     <section class="services" aria-label="Diensten">
-      <a href="#" class="service mail-link">
-        <span>01</span><strong>STAND-UP<br>COMEDY</strong><b>↗</b>
+      <a class="service mail-link" href="#">
+        <span>01</span>
+        <strong>STAND-UP<br>COMEDY</strong>
+        <b aria-hidden="true">↗</b>
       </a>
 
-      <a href="#" class="service mail-link">
-        <span>02</span><strong>HOST /<br>DAGVOORZITTER</strong><b>↗</b>
+      <a class="service mail-link" href="#">
+        <span>02</span>
+        <strong>HOST /<br>DAGVOORZITTER</strong>
+        <b aria-hidden="true">↗</b>
       </a>
 
-      <a href="#" class="service mail-link">
-        <span>03</span><strong>CEREMONIES<br>MET KARAKTER</strong><b>↗</b>
+      <a class="service mail-link" href="#">
+        <span>03</span>
+        <strong>CEREMONIES<br>MET KARAKTER</strong>
+        <b aria-hidden="true">↗</b>
       </a>
     </section>
 
-    <section class="quote">
+    <section class="bio" aria-labelledby="bio-title">
+      <div class="bio-number" aria-hidden="true">01</div>
+
+      <div class="bio-copy">
+        <p class="eyebrow">WIE DENKT HIJ WEL DAT HIJ IS?</p>
+
+        <h2 id="bio-title">
+          HET KORTE<br>
+          <em>ANTWOORD.</em>
+        </h2>
+
+        <p>
+          Jordy Riensema is comedian, host en trouwambtenaar. Een jonge vader van drie die precies weet hoe iedereen alles moet doen. Behalve hijzelf. Op het podium combineert hij scherpe observaties, timing en een bewonderenswaardig gebrek aan twijfel.
+        </p>
+      </div>
+
+      <div class="bio-stamp" aria-hidden="true">
+        100%<br>OVERTUIGD
+      </div>
+    </section>
+
+    <section class="statement" aria-label="Stijl">
       <p>GEEN<br>SMOOTH<br>TALKER.</p>
-      <div aria-hidden="true"></div>
+      <div class="statement-orb" aria-hidden="true"></div>
       <p>WEL<br>OP ZIJN<br>PLEK.</p>
     </section>
 
-    <section class="reel-section">
+    <section class="reel-section" aria-labelledby="reel-title">
       <div class="reel-copy">
         <p class="eyebrow">EVEN KIJKEN</p>
-        <h2>LIVE.<br><em>ZONDER<br>VEEL GEDOE.</em></h2>
+
+        <h2 id="reel-title">
+          LIVE.<br>
+          <em>ZONDER<br>VEEL GEDOE.</em>
+        </h2>
       </div>
 
-      <a class="reel" href="https://youtube.com/shorts/uxFbCLT_5jk" target="_blank" rel="noopener noreferrer">
+      <a
+        class="reel"
+        href="https://youtube.com/shorts/uxFbCLT_5jk"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Bekijk Jordy Riensema op YouTube"
+      >
         <iframe
           src="https://www.youtube-nocookie.com/embed/uxFbCLT_5jk?autoplay=1&mute=1&loop=1&playlist=uxFbCLT_5jk&playsinline=1&controls=0&rel=0&modestbranding=1"
-          title="Jordy Riensema op YouTube"
+          title="Jordy Riensema live"
           allow="autoplay; encrypted-media; picture-in-picture"
           loading="lazy"
         ></iframe>
+
         <span>KIJK MET GELUID ↗</span>
       </a>
     </section>
 
-    <section class="shows" id="speellijst">
-      <div class="shows-title">
+    <section class="ceremonies" aria-labelledby="ceremonies-title">
+      <figure class="ceremonies-photo">
+        <img
+          src="jordy-toga.jpg"
+          alt="Jordy Riensema als trouwambtenaar in toga"
+          width="1365"
+          height="2048"
+          loading="lazy"
+        >
+      </figure>
+
+      <div class="ceremonies-copy">
+        <p class="eyebrow">CEREMONIES MET KARAKTER</p>
+
+        <h2 id="ceremonies-title">
+          JA.<br>
+          MAAR DAN<br>
+          <em>GOED.</em>
+        </h2>
+
+        <p>
+          Jordy maakt persoonlijke ceremonies met humor, timing en aandacht. Niet overdreven zoet, wel oprecht. Een verhaal dat bij jullie past, en dat mensen onthouden.
+        </p>
+
+        <a class="text-link mail-link" href="#">
+          VERTEL HET VERHAAL ↗
+        </a>
+      </div>
+
+      <div class="ceremonies-mark" aria-hidden="true">J.</div>
+    </section>
+
+    <section class="shows" id="speellijst" aria-labelledby="shows-title">
+      <div class="shows-heading">
         <p class="eyebrow">SPEELDATA</p>
-        <h2>WAAR<br><em>DAN?</em></h2>
+
+        <h2 id="shows-title">
+          WAAR<br>
+          <em>DAN?</em>
+        </h2>
       </div>
 
       <div class="show-list">
-        <a class="show" href="https://puncher.nl/haarlem/shows/" target="_blank" rel="noopener noreferrer">
-          <time datetime="2026-11-06">06.11</time>
-          <strong>PUNCHER<br>JOPENKERK · MC</strong>
-          <span>HAARLEM</span>
-          <b>TICKETS ↗</b>
-        </a>
-
         <div class="show">
           <time datetime="2026-11-12">12.11</time>
-          <strong>OPEN MIC<br>ALKMAARS KOFFIEHUIS</strong>
+
+          <strong>
+            OPEN MIC<br>
+            ALKMAARS KOFFIEHUIS
+          </strong>
+
           <span>ALKMAAR</span>
           <b>INFO VOLGT</b>
         </div>
 
-        <a class="show" href="https://comedyclubhaug.com/shows/big-fat-gong-show-111711773" target="_blank" rel="noopener noreferrer">
-          <time datetime="2026-11-21">21.11</time>
-          <strong>BIG FAT<br>GONG SHOW</strong>
-          <span>CLUB HAUG</span>
-          <b>TICKETS ↗</b>
-        </a>
+        <div class="show">
+          <time datetime="2026-11-19">19.11</time>
 
-        <a class="show" href="https://www.lifester.co/events/comedy-talent-award-voorronde-10-1r6xpu7qlbe" target="_blank" rel="noopener noreferrer">
+          <strong>
+            THE FLOOR<br>
+            IS YOURS
+          </strong>
+
+          <span>CAFÉ CAAT · LEIDSE SCHOUWBURG</span>
+          <b>INFO VOLGT</b>
+        </div>
+
+        <a
+          class="show"
+          href="https://www.lifester.co/events/comedy-talent-award-voorronde-10-1r6xpu7qlbe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <time datetime="2026-11-23">23.11</time>
-          <strong>COMEDY TALENT AWARD<br>VOORRONDE</strong>
-          <span>COMEDYHUIS</span>
+
+          <strong>
+            COMEDY TALENT AWARD<br>
+            VOORRONDE
+          </strong>
+
+          <span>COMEDYHUIS · UTRECHT</span>
           <b>TICKETS ↗</b>
         </a>
 
         <div class="show">
           <time datetime="2026-12-06">06.12</time>
+
           <strong>HAARLEM</strong>
+
           <span>EXACTE INFO VOLGT</span>
           <b>INFO VOLGT</b>
         </div>
 
         <div class="show">
           <time datetime="2026-12-08">08.12</time>
+
           <strong>DEN HAAG LACHT</strong>
-          <span>THEATER DAKOTA</span>
+
+          <span>THEATER DAKOTA · DEN HAAG</span>
           <b>INFO VOLGT</b>
         </div>
 
         <div class="show">
           <time datetime="2026-12-18">18.12</time>
+
           <strong>HOORN LACHT</strong>
-          <span>THEATER HET PAKHUIS</span>
+
+          <span>THEATER HET PAKHUIS · HOORN</span>
           <b>INFO VOLGT</b>
         </div>
       </div>
     </section>
 
-    <section class="photos">
+    <section class="photos" aria-label="Foto's">
       <figure class="photo-wide">
-        <img src="jordy-2.jpg" alt="Jordy Riensema" width="1600" height="1200" loading="lazy">
+        <img
+          src="jordy-2.jpg"
+          alt="Jordy Riensema tijdens een optreden"
+          width="1600"
+          height="1200"
+          loading="lazy"
+        >
       </figure>
 
       <div class="photo-letter" aria-hidden="true">J.</div>
 
       <figure class="photo-tall">
-        <img src="jordy-4.jpg" alt="Jordy Riensema" width="1086" height="1600" loading="lazy">
+        <img
+          src="jordy-4.jpg"
+          alt="Jordy Riensema in pak"
+          width="1086"
+          height="1600"
+          loading="lazy"
+        >
       </figure>
     </section>
 
-    <section class="booking" id="boeken">
+    <section class="booking" id="boeken" aria-labelledby="booking-title">
       <p class="eyebrow">JOUW PODIUM. MIJN PROBLEEM.</p>
-      <h2>ZEG HET<br><em>MAAR.</em></h2>
+
+      <h2 id="booking-title">
+        ZEG HET<br>
+        <em>MAAR.</em>
+      </h2>
 
       <div class="booking-links">
-        <a href="#" class="mail-link">STUUR EEN BERICHT ↗</a>
+        <a class="mail-link" href="#">STUUR EEN BERICHT ↗</a>
         <a href="tel:+31611761993">06 1176 1993 ↗</a>
       </div>
     </section>
@@ -162,23 +293,31 @@
 
   <footer>
     <a class="logo" href="#top">JORDY<br>RIENSEMA</a>
+
     <p>© 2026</p>
-    <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+
+    <div class="footer-links">
+      <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+      <a href="#top">NAAR BOVEN ↑</a>
+    </div>
   </footer>
 
   <script>
-    const opening = document.getElementById("opening");
+    const intro = document.getElementById("intro");
 
-    function closeOpening() {
-      opening.classList.add("closed");
-      setTimeout(() => opening.remove(), 700);
+    function closeIntro() {
+      intro.classList.add("is-hidden");
+      setTimeout(() => intro.remove(), 700);
     }
 
-    document.getElementById("skip-opening").addEventListener("click", closeOpening);
-    setTimeout(closeOpening, 1800);
+    document.getElementById("skip-intro").addEventListener("click", closeIntro);
+    setTimeout(closeIntro, 1800);
 
     document.querySelectorAll(".mail-link").forEach((link) => {
-      link.href = "mailto:" + "jordyrien" + "@" + "hotmail.com" + "?subject=Boeking%20Jordy%20Riensema";
+      const user = "jordyrien";
+      const domain = "hotmail.com";
+
+      link.href = `mailto:${user}@${domain}?subject=Boeking%20Jordy%20Riensema`;
     });
   </script>
 </body>
