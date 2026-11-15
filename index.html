@@ -3,96 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jordy Riensema — stand-up comedy, hosting en ceremonies.">
-  <meta name="theme-color" content="#191512">
-  <title>Jordy Riensema — Comedy, hosting & ceremonies</title>
+  <meta name="description" content="Jordy Riensema. Comedian, host en trouwambtenaar.">
+  <title>Jordy Riensema — Onnodig goed.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="intro" id="intro" aria-hidden="true">
-    <div class="intro-glow"></div>
-    <div class="intro-letter">J<span>.</span></div>
+    <div class="intro-light"></div>
+    <span class="intro-j">J.</span>
     <p>JORDY RIENSEMA</p>
-    <button type="button" id="skip-intro">SKIP ↗</button>
+    <button id="skip-intro" type="button">SKIP DE OPBOUW ↗</button>
   </div>
 
-  <a class="skip-link" href="#inhoud">Naar inhoud</a>
-
   <header class="header">
-    <a class="logo" href="#top" aria-label="Jordy Riensema, naar boven">
-      JORDY<br>RIENSEMA
-    </a>
+    <a class="logo" href="#top" aria-label="Naar boven">JR.</a>
 
-    <nav class="navigation" aria-label="Hoofdnavigatie">
-      <a href="#speellijst">SPEELDATA</a>
-      <a href="#boeken" class="header-button">BOEK JORDY ↗</a>
+    <nav class="nav" aria-label="Navigatie">
+      <a href="#speellijst">SPEELLIJST</a>
+      <a class="mail-link nav-book" href="#">BOEK JORDY ↗</a>
     </nav>
   </header>
 
-  <main id="inhoud">
-    <section class="hero" id="top" aria-labelledby="hero-title">
+  <main id="top">
+    <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">COMEDY · HOSTING · CEREMONIES</p>
 
-        <h1 id="hero-title">
+        <h1>
           JORDY<br>
-          <em>RIENSEMA.</em>
+          <span>RIENSEMA.</span>
         </h1>
 
-        <p class="hero-text">
-          Aangenaam.<br>
-          Soms ongemakkelijk.
+        <p class="hero-line">
+          Rustig maar.<br>
+          Hij is er al.
         </p>
+
+        <div class="hero-fact">
+          <span>FEIT #01</span>
+          <p>Niet voor iedereen.<br>Gelukkig maar.</p>
+        </div>
       </div>
 
-      <figure class="hero-photo">
-        <img
-          src="jordy-portret.jpg"
-          alt="Portret van Jordy Riensema"
-          width="1024"
-          height="1536"
-          fetchpriority="high"
-        >
-      </figure>
-
-      <div class="hero-mark" aria-hidden="true">J.</div>
+      <div class="hero-image">
+        <img src="jordy-portret.jpg" alt="Portret van comedian Jordy Riensema">
+        <span class="hero-j" aria-hidden="true">J.</span>
+        <span class="hero-label">KOMT GOED.<br>DENKT HIJ.</span>
+      </div>
     </section>
 
-    <section class="services" aria-label="Diensten">
+    <section class="ticker" aria-label="Jordy Riensema in drie woorden">
+      <div class="ticker-track">
+        <span>COMEDIAN</span>
+        <i>✳</i>
+        <span>DAGVOORZITTER</span>
+        <i>✳</i>
+        <span>TROUWAMBTENAAR</span>
+        <i>✳</i>
+        <span>ONGEVRAAGD ADVIES</span>
+        <i>✳</i>
+        <span>COMEDIAN</span>
+        <i>✳</i>
+        <span>DAGVOORZITTER</span>
+        <i>✳</i>
+        <span>TROUWAMBTENAAR</span>
+        <i>✳</i>
+      </div>
+    </section>
+
+    <section class="services">
       <a class="service mail-link" href="#">
-        <span>01</span>
-        <strong>STAND-UP<br>COMEDY</strong>
-        <b aria-hidden="true">↗</b>
+        <span class="service-number">01</span>
+        <h2>STAND-UP<br>COMEDY</h2>
+        <p>Grappen. Timing.<br>En een gezonde minachting voor stilte.</p>
+        <b>↗</b>
       </a>
 
       <a class="service mail-link" href="#">
-        <span>02</span>
-        <strong>HOST /<br>DAGVOORZITTER</strong>
-        <b aria-hidden="true">↗</b>
+        <span class="service-number">02</span>
+        <h2>HOST /<br>DAGVOORZITTER</h2>
+        <p>Houdt iedereen wakker.<br>Ook na de lunch.</p>
+        <b>↗</b>
       </a>
 
       <a class="service mail-link" href="#">
-        <span>03</span>
-        <strong>CEREMONIES<br>MET KARAKTER</strong>
-        <b aria-hidden="true">↗</b>
+        <span class="service-number">03</span>
+        <h2>CEREMONIES<br>MET KARAKTER</h2>
+        <p>Geen duiven.<br>Wel een goed verhaal.</p>
+        <b>↗</b>
       </a>
     </section>
 
-    <section class="bio" aria-labelledby="bio-title">
-      <div class="bio-number" aria-hidden="true">01</div>
+    <section class="bio">
+      <div class="bio-side">WIE IS DIT EIGENLIJK</div>
 
-      <div class="bio-copy">
-        <p class="eyebrow">WIE DENKT HIJ WEL DAT HIJ IS?</p>
+      <div class="bio-main">
+        <p class="eyebrow">EEN KORTE BIO. HIJ HEEFT OOK NOG ANDERE DINGEN TE DOEN.</p>
 
-        <h2 id="bio-title">
-          HET KORTE<br>
-          <em>ANTWOORD.</em>
+        <h2>
+          EEN MAN<br>
+          MET <em>OORDELEN.</em>
         </h2>
 
         <p>
@@ -100,60 +116,102 @@
         </p>
       </div>
 
-      <div class="bio-stamp" aria-hidden="true">
-        100%<br>OVERTUIGD
+      <div class="bio-badge">
+        <span>DOOR JORDY</span>
+        <strong>GOEDGEKEURD</strong>
+        <span>SINDS ALTIJD</span>
       </div>
     </section>
 
-    <section class="statement" aria-label="Stijl">
-      <p>GEEN<br>SMOOTH<br>TALKER.</p>
-      <div class="statement-orb" aria-hidden="true"></div>
-      <p>WEL<br>OP ZIJN<br>PLEK.</p>
+    <section class="manifesto">
+      <div class="manifesto-copy">
+        <p class="eyebrow">OUDERSCHAPSADVIES. GRATIS. ONGEVRAAGD.</p>
+
+        <h2>
+          GENTLE<br>
+          PARENTING?
+        </h2>
+
+        <p>
+          MOETEN ZE LEKKER<br>
+          IN GENT HOUDEN.
+        </p>
+      </div>
+
+      <span class="manifesto-j" aria-hidden="true">!</span>
+      <span class="manifesto-orb" aria-hidden="true"></span>
     </section>
 
-    <section class="reel-section" aria-labelledby="reel-title">
-      <div class="reel-copy">
-        <p class="eyebrow">EVEN KIJKEN</p>
-
-        <h2 id="reel-title">
-          LIVE.<br>
-          <em>ZONDER<br>VEEL GEDOE.</em>
+    <section class="testimonials">
+      <div class="testimonials-head">
+        <p class="eyebrow">ECHTE REACTIES. WAARSCHIJNLIJK.</p>
+        <h2>
+          MENSEN<br>
+          <em>PRATEN.</em>
         </h2>
       </div>
 
-      <a
-        class="reel"
-        href="https://youtube.com/shorts/uxFbCLT_5jk"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Bekijk Jordy Riensema op YouTube"
-      >
+      <div class="quotes">
+        <figure class="quote quote-black">
+          <blockquote>“Hij was eigenlijk veel beter dan verwacht.”</blockquote>
+          <figcaption>— Iemand die vooraf twijfelde</figcaption>
+        </figure>
+
+        <figure class="quote quote-orange">
+          <blockquote>“Mijn partner heeft voor het eerst gelachen zonder wijn.”</blockquote>
+          <figcaption>— Bezoeker, vermoedelijk getrouwd</figcaption>
+        </figure>
+
+        <figure class="quote quote-white">
+          <blockquote>“Hij is heel goed. Zeg hem dat vooral niet.”</blockquote>
+          <figcaption>— Zijn moeder, voorzichtig</figcaption>
+        </figure>
+
+        <div class="quote-sticker">
+          <span>100%</span>
+          <strong>TEVREDEN</strong>
+          <small>VOLGENS HEMZELF</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="short-section">
+      <div class="short-copy">
+        <p class="eyebrow">BEWEGEND BEWIJS</p>
+
+        <h2>
+          LIVE.<br>
+          ZONDER<br>
+          <em>OEFENING.</em>
+        </h2>
+
+        <p>
+          Hij noemt het spontaniteit.<br>
+          Anderen noemen het risico.
+        </p>
+      </div>
+
+      <a class="short-video" href="https://youtube.com/shorts/uxFbCLT_5jk" target="_blank" rel="noopener" aria-label="Bekijk Jordy op YouTube">
         <iframe
           src="https://www.youtube-nocookie.com/embed/uxFbCLT_5jk?autoplay=1&mute=1&loop=1&playlist=uxFbCLT_5jk&playsinline=1&controls=0&rel=0&modestbranding=1"
           title="Jordy Riensema live"
           allow="autoplay; encrypted-media; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
+          loading="lazy">
+        </iframe>
         <span>KIJK MET GELUID ↗</span>
       </a>
     </section>
 
-    <section class="ceremonies" aria-labelledby="ceremonies-title">
-      <figure class="ceremonies-photo">
-        <img
-          src="jordy-toga.jpg"
-          alt="Jordy Riensema als trouwambtenaar in toga"
-          width="1365"
-          height="2048"
-          loading="lazy"
-        >
-      </figure>
+    <section class="ceremonies">
+      <div class="ceremonies-photo">
+        <img src="jordy-toga.jpg" alt="Jordy Riensema als trouwambtenaar">
+        <span aria-hidden="true">J.</span>
+      </div>
 
       <div class="ceremonies-copy">
-        <p class="eyebrow">CEREMONIES MET KARAKTER</p>
+        <p class="eyebrow">TROUWAMBTENAAR. GEEN GRAP.</p>
 
-        <h2 id="ceremonies-title">
+        <h2>
           JA.<br>
           MAAR DAN<br>
           <em>GOED.</em>
@@ -163,186 +221,159 @@
           Jordy maakt persoonlijke ceremonies met humor, timing en aandacht. Niet overdreven zoet, wel oprecht. Een verhaal dat bij jullie past, en dat mensen onthouden.
         </p>
 
-        <a class="text-link mail-link" href="#">
-          VERTEL HET VERHAAL ↗
-        </a>
-      </div>
+        <a class="mail-link text-link" href="#">VERTEL HET VERHAAL ↗</a>
 
-      <div class="ceremonies-mark" aria-hidden="true">J.</div>
+        <span class="ceremonies-note">
+          Huilt zelden.<br>
+          Behalve bij een goede speech.
+        </span>
+      </div>
     </section>
 
-    <section class="shows" id="speellijst" aria-labelledby="shows-title">
-      <div class="shows-heading">
-        <p class="eyebrow">SPEELDATA</p>
+    <section class="shows" id="speellijst">
+      <div class="shows-intro">
+        <p class="eyebrow">VERSCHIJNINGEN WAAR JE LATER OVER KUNT OPSCHEPPEN</p>
 
-        <h2 id="shows-title">
-          WAAR<br>
-          <em>DAN?</em>
+        <h2>
+          SPEEL<br>
+          <em>LIJST.</em>
         </h2>
       </div>
 
       <div class="show-list">
-  <div class="show">
-    <time datetime="2026-11-12">12.11</time>
+        <article class="show">
+          <time datetime="2026-11-19">19<span>NOV</span></time>
+          <div>
+            <h3>THE FLOOR IS YOURS</h3>
+            <p>Café Caat · Leidse Schouwburg · Leiden</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
 
-    <strong>
-      OPEN MIC<br>
-      ALKMAARS KOFFIEHUIS
-    </strong>
+        <article class="show">
+          <time datetime="2026-11-23">23<span>NOV</span></time>
+          <div>
+            <h3>COMEDY TALENT AWARD</h3>
+            <p>Voorronde · Comedyhuis · Utrecht</p>
+          </div>
+          <a href="https://www.lifester.co/events/comedy-talent-award-voorronde-10-1r6xpu7qlbe" target="_blank" rel="noopener">TICKETS ↗</a>
+        </article>
 
-    <span>ALKMAAR</span>
-    <b>INFO VOLGT</b>
-  </div>
+        <article class="show">
+          <time datetime="2026-11-26">26<span>NOV</span></time>
+          <div>
+            <h3>TO BE CONFIRMED</h3>
+            <p>Exacte informatie volgt</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
 
-  <div class="show">
-    <time datetime="2026-11-19">19.11</time>
+        <article class="show">
+          <time datetime="2026-12-03">03<span>DEC</span></time>
+          <div>
+            <h3>COMEDYTRAIN KLEINE ZAAL</h3>
+            <p>Amsterdam</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
 
-    <strong>
-      THE FLOOR<br>
-      IS YOURS
-    </strong>
+        <article class="show">
+          <time datetime="2026-12-06">06<span>DEC</span></time>
+          <div>
+            <h3>HAARLEM</h3>
+            <p>Exacte informatie volgt</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
 
-    <span>CAFÉ CAAT · LEIDSE SCHOUWBURG</span>
-    <b>INFO VOLGT</b>
-  </div>
+        <article class="show">
+          <time datetime="2026-12-08">08<span>DEC</span></time>
+          <div>
+            <h3>DEN HAAG LACHT</h3>
+            <p>Theater Dakota · Den Haag</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
 
-  <a
-    class="show"
-    href="https://www.lifester.co/events/comedy-talent-award-voorronde-10-1r6xpu7qlbe"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <time datetime="2026-11-23">23.11</time>
+        <article class="show">
+          <time datetime="2026-12-10">10<span>DEC</span></time>
+          <div>
+            <h3>TO BE CONFIRMED</h3>
+            <p>Exacte informatie volgt</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
 
-    <strong>
-      COMEDY TALENT AWARD<br>
-      VOORRONDE
-    </strong>
-
-    <span>COMEDYHUIS · UTRECHT</span>
-    <b>TICKETS ↗</b>
-  </a>
-
-  <div class="show">
-    <time datetime="2026-11-26">26.11</time>
-
-    <strong>TO BE<br>CONFIRMED</strong>
-
-    <span>INFO VOLGT</span>
-    <b>TBC</b>
-  </div>
-
-  <div class="show">
-    <time datetime="2026-12-03">03.12</time>
-
-    <strong>COMEDYTRAIN<br>KLEINE ZAAL</strong>
-
-    <span>AMSTERDAM</span>
-    <b>INFO VOLGT</b>
-  </div>
-
-  <div class="show">
-    <time datetime="2026-12-06">06.12</time>
-
-    <strong>HAARLEM</strong>
-
-    <span>EXACTE INFO VOLGT</span>
-    <b>INFO VOLGT</b>
-  </div>
-
-  <div class="show">
-    <time datetime="2026-12-08">08.12</time>
-
-    <strong>DEN HAAG LACHT</strong>
-
-    <span>THEATER DAKOTA · DEN HAAG</span>
-    <b>INFO VOLGT</b>
-  </div>
-
-  <div class="show">
-    <time datetime="2026-12-10">10.12</time>
-
-    <strong>TO BE<br>CONFIRMED</strong>
-
-    <span>INFO VOLGT</span>
-    <b>TBC</b>
-  </div>
-
-  <div class="show">
-    <time datetime="2026-12-18">18.12</time>
-
-    <strong>HOORN LACHT</strong>
-
-    <span>THEATER HET PAKHUIS · HOORN</span>
-    <b>INFO VOLGT</b>
-  </div>
-
-    <section class="photos" aria-label="Foto's">
-      <figure class="photo-wide">
-        <img
-          src="jordy-2.jpg"
-          alt="Jordy Riensema tijdens een optreden"
-          width="1600"
-          height="1200"
-          loading="lazy"
-        >
-      </figure>
-
-      <div class="photo-letter" aria-hidden="true">J.</div>
-
-      <figure class="photo-tall">
-        <img
-          src="jordy-4.jpg"
-          alt="Jordy Riensema in pak"
-          width="1086"
-          height="1600"
-          loading="lazy"
-        >
-      </figure>
+        <article class="show">
+          <time datetime="2026-12-18">18<span>DEC</span></time>
+          <div>
+            <h3>HOORN LACHT</h3>
+            <p>Theater Het Pakhuis · Hoorn</p>
+          </div>
+          <span>INFO VOLGT</span>
+        </article>
+      </div>
     </section>
 
-    <section class="booking" id="boeken" aria-labelledby="booking-title">
-      <p class="eyebrow">JOUW PODIUM. MIJN PROBLEEM.</p>
+    <section class="gallery">
+      <div class="gallery-wide">
+        <img src="jordy-2.jpg" alt="Jordy Riensema op het podium">
+      </div>
 
-      <h2 id="booking-title">
+      <div class="gallery-tall">
+        <img src="jordy-4.jpg" alt="Jordy Riensema in pak">
+      </div>
+
+      <span class="gallery-j" aria-hidden="true">J.</span>
+      <span class="gallery-note">KUNSTENAAR.<br>VOLGENS EIGEN ZEGGEN.</span>
+    </section>
+
+    <section class="contact">
+      <p class="eyebrow">JOUW PODIUM. ZIJN PROBLEEM.</p>
+
+      <h2>
         ZEG HET<br>
         <em>MAAR.</em>
       </h2>
 
-      <div class="booking-links">
+      <p>
+        Voor comedy, hosting, ceremonies<br>
+        of een opvallend goed idee.
+      </p>
+
+      <div class="contact-links">
         <a class="mail-link" href="#">STUUR EEN BERICHT ↗</a>
         <a href="tel:+31611761993">06 1176 1993 ↗</a>
       </div>
+
+      <span class="contact-j" aria-hidden="true">J.</span>
     </section>
   </main>
 
-  <footer>
-    <a class="logo" href="#top">JORDY<br>RIENSEMA</a>
-
-    <p>© 2026</p>
-
-    <div class="footer-links">
-      <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
-      <a href="#top">NAAR BOVEN ↑</a>
-    </div>
+  <footer class="footer">
+    <span>JORDY RIENSEMA</span>
+    <span>© 2026</span>
+    <a href="https://www.instagram.com/jordyriensema/" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+    <a href="#top">NAAR BOVEN ↑</a>
   </footer>
 
   <script>
     const intro = document.getElementById("intro");
+    const skipIntro = document.getElementById("skip-intro");
 
     function closeIntro() {
+      if (!intro) return;
       intro.classList.add("is-hidden");
-      setTimeout(() => intro.remove(), 700);
+      window.setTimeout(() => intro.remove(), 700);
     }
 
-    document.getElementById("skip-intro").addEventListener("click", closeIntro);
-    setTimeout(closeIntro, 1800);
+    window.setTimeout(closeIntro, 1800);
+    skipIntro.addEventListener("click", closeIntro);
 
     document.querySelectorAll(".mail-link").forEach((link) => {
-      const user = "jordyrien";
-      const domain = "hotmail.com";
-
-      link.href = `mailto:${user}@${domain}?subject=Boeking%20Jordy%20Riensema`;
+      const first = "jordyrien";
+      const host = "hotmail.com";
+      link.href = `mailto:${first}@${host}?subject=Boeking%20Jordy%20Riensema`;
     });
   </script>
 </body>
